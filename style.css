@@ -1,0 +1,560 @@
+
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    background-color: black;
+    background-image: url("./wallpaper.jpg");
+    background-size: cover;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  
+  .exception {
+    color: red;
+    font-size: 18;
+    font-weight: normal;
+  }
+    
+  header {
+    position: fixed;
+    background-color: #363659;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .menu {
+    margin-left: 40%;
+    width: 50%;
+    background-color: #363659;
+    overflow: hidden;
+    float: none;
+  }
+  
+  
+  .menu a {
+    text-align: center;
+    cursor: pointer;
+    float: left;
+    color: white;
+    padding: 14px 14px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 900;
+  }
+  
+  .menu a:hover {
+    background-color: #1a1a1a;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #1a1a1a;
+  }
+  
+  button {
+    background-color: #363659;
+    color: white;
+    height: 60px;
+    width: 250px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.34);
+    border: none;
+    letter-spacing: 2px;
+  }
+
+/* Welcome Page Style*/
+  .WelcomePage {
+    text-align: center;
+    padding-top: 5%;
+    margin-bottom: 80px; /* adjust value as needed */
+
+  }
+  
+  .WelcomePage h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .WelcomePage h2 {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .WelcomePage ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .WelcomePage li {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .WelcomePage a {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .WelcomePage-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .WelcomePage button {
+    background-color: #363659;
+    color: white;
+    height: 60px;
+    width: 200px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.34);
+    border: none;
+    letter-spacing: 2px;
+    margin: 0 20px;
+  }
+  
+  .WelcomePage button:hover {
+    background-color: #555580;
+  }
+  
+
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modalContent {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+  
+ /* Register Page CSS */
+ #Register {
+    display: none;
+    background-color: #ffffff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-top: 60px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Register {
+      width: 90%;
+      max-width: 400px;
+    }
+  }
+  
+  .RegisterBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .RegisterInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #e1e1e1;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .exception {
+    color: #dc3545;
+  }
+  
+  label {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  label.exception {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+
+  /* Footer CSS */
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #ffffff52;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    footer {
+      font-size: 12px;
+    }
+  }
+  
+  footer a {
+    color: #666666;
+  }
+  
+  footer a:hover {
+    color: #4CAF50;
+  }
+  
+  footer p {
+    margin: 10px 0;
+  }
+  
+  footer .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  /* Login CSS */
+
+  #login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    margin-bottom: 80px; /* adjust value as needed */
+}
+
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.SignInInput {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+label {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #cfd3d7;
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+#loginform {
+    margin-top: 10px;
+}
+
+.userBox {
+    display: flex;
+    flex-direction: column; /* add this line */
+    align-items: center;
+    
+}
+
+
+/* Profile Page CSS */
+
+.settings {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    display: none;
+    height: 50%;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto; 
+    margin-top: 120px;
+  }
+  
+  .settings h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: #cfd3d7;
+    margin-bottom: 10px;
+  }
+  
+  .settings label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .settings input[type="text"] {
+    background-color: #e9ebec;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 300px;
+    align-items: center;
+
+  }
+  
+  .settings button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .settings button:hover {
+    background-color: #3e8e41;
+  }
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.canvas{
+    padding: 20px;
+    background-color: black;
+}
+
+.score{
+    position: fixed;
+    padding: 20px;
+    color: white;
+    user-select: none;
+}
+.time{
+    position: fixed;
+    padding: 20px;
+    color: white;
+    user-select: none;
+}
+.result {
+    width: 50%;
+    padding: 20px;
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.result .game-over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.result p {
+    margin: 20px 0;
+    color: #777;
+}
+
+.result button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.result button:hover {
+    background-color: #111;
+}
+
+.winning h2:first-of-type {
+    color: #3674B3;
+    margin-bottom: 30px;
+}
+
+
+
+/* Styles for the leaderboard container */
+.leaderboard-container {
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  height: 100vh;
+}
+
+/* Styles for the leaderboard table */
+.leaderboard-table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.leaderboard-table th, 
+.leaderboard-table td {
+  text-align: left;
+  padding: 12px;
+}
+.leaderboard-table th:first-child,
+.leaderboard-table td:first-child {
+  width: 20%;
+}
+.leaderboard-table th:last-child,
+.leaderboard-table td:last-child {
+  width: 20%;
+}
+
+
+.leaderboard-table th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .leaderboard-table {
+    font-size: 12px;
+    width: 90%;
+    margin: 20px auto;
+  }
+}
+
+
